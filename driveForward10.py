@@ -7,8 +7,8 @@ def main(robot: libhousy.robot):
         robot.lDriveEncoder.Reset()
         first=False
 
-        robot.rDrive.Set(0.8)
-        robot.lDrive.Set(0.8)
+    robot.rDrive.Set(0.8)
+    robot.lDrive.Set(0.8)
 
     if robot.rDriveEncoder.Get() > 120:
         robot.rDrive.Set(0)
